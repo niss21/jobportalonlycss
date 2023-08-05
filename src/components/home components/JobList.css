@@ -1,0 +1,74 @@
+.joblist-wrapper {
+  padding: 30px 20px;
+}
+
+.joblist-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.job-wrapper,
+.sort-btn-wrapper {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.job-wrapper {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sort-btn-wrapper {
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-btn {
+  display: flex;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 200ms;
+}
+
+.sort-menu {
+  position: absolute;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 2px 2px 1px #efeff0, -1px -1px #efeff0;
+  transform-origin: top left;
+  scale: 0;
+  transition: scale 200ms;
+}
+
+.sort-menu div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.show-sort-menu {
+  scale: 1;
+}
+
+.sort-menu div:first-child {
+  border-bottom: 2px solid #efeff0;
+}
+
+@media (hover: hover) {
+  .sort-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .sort-menu div:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}

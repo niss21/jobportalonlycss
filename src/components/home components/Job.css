@@ -1,0 +1,63 @@
+.job {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  /* border: 1px solid black; */
+  box-shadow: 2px 2px 1px #efeff0, -1px -1px #efeff0;
+  border-radius: 6px;
+}
+
+.job img {
+  width: 64px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.preview-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.company-name {
+  color: #5f5858;
+}
+
+.job-preview span {
+  font-size: 13px;
+}
+
+.job-preview svg {
+  fill: #338573;
+}
+
+.job-mini-details {
+  display: flex;
+  gap: 20px;
+}
+
+.job-mini-details div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.preview-right button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #338573;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (width < 600px) {
+  .preview-right {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}

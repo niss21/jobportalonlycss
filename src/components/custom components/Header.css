@@ -1,0 +1,108 @@
+.header-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.header-wrapper h2 a,
+.header-buttons a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header-wrapper h2 a {
+  color: #338573;
+  font-family: "Noto Sans Hebrew", sans-serif;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-buttons a {
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+.bold-link {
+  background-color: #338573;
+  color: white;
+  font-weight: 600;
+}
+
+.light-link {
+  background-color: white;
+  color: #338573;
+  font-weight: 100;
+}
+
+.bold-link,
+.light-link {
+  font-family: "Noto Sans Hebrew", sans-serif;
+}
+
+.menu-icon {
+  position: relative;
+}
+
+.menu-icon svg {
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  right: 0;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px #e3e3e3, -1px -1px 1px #e3e3e3;
+  overflow: hidden;
+  user-select: none;
+  transform: scale(0) rotate(-90deg);
+  transform-origin: top right;
+  transition: all 200ms;
+}
+
+.show-menu {
+  transform: scale(1);
+}
+
+.menu a {
+  background-color: white;
+  font-weight: 500;
+  border-radius: 0;
+  color: #338573;
+  padding: 12px 14px;
+  border-bottom: 1px solid #e3e3e3;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.menu button {
+  padding: 10px 6px;
+  border: none;
+  background-color: #338573;
+  color: white;
+  border-radius: 0 0 4px 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+@media screen and (width < 420px) {
+  .header-wrapper {
+    padding: 10px 20px;
+  }
+
+  .header-buttons {
+    gap: 14px;
+  }
+}

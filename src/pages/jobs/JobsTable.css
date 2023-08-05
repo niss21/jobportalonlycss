@@ -1,0 +1,97 @@
+.job-table-heading {
+  background-color: #f4f5f7;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.jobs-table {
+  width: 96%;
+  border-radius: 6px;
+  margin: 20px auto;
+  box-shadow: 2px 2px 1px #e3e3e3, -1px -1px 1px #e3e3e3;
+}
+
+.showcontainer {
+  margin: 20px;
+}
+
+.jobs-table-header,
+.jobs-table-row {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 1fr 0.8fr 0.8fr 80px;
+  padding: 16px 30px;
+}
+
+.jobs-table-header {
+  border-bottom: 1px solid black;
+}
+
+.jobs-table-header span,
+.jobs-table-row span:first-child {
+  font-weight: 500;
+}
+
+.jobs-table-row {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.posted-jobs-table-row span {
+  font-size: 14px;
+}
+
+.job-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-actions a {
+  display: flex;
+}
+
+.job-actions svg {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.btn button {
+  padding: 10px 6px;
+  border: none;
+  background-color: #338573;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list h2 {
+  margin: 2px;
+}
+
+.list span {
+  font-weight: 50;
+  font-size: 20px;
+}
+
+.desc h3 {
+  margin-top: 10px;
+}
+
+.jobtable-status {
+  margin: 0 auto;
+  width: 96%;
+  font-weight: 500;
+  text-align: center;
+}

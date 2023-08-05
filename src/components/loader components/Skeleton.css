@@ -1,0 +1,70 @@
+.skeleton {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 1px #efeff0, -1px -1px #efeff0;
+  border-radius: 6px;
+}
+
+.img-skeleton {
+  width: 64px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.preview-right-skeleton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.job-preview-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.h3-skeleton {
+  width: 100%;
+  max-width: 190px;
+  height: 24px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+.span-skeleton {
+  width: 60px;
+  height: 16px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.job-mini-details-skeleton {
+  display: flex;
+  gap: 16px;
+}
+
+.button-skeleton {
+  width: 124px;
+  height: 34px;
+  /* border-radius: 6px; */
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(168, 20%, 95%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 70%);
+  }
+}
+
+@media screen and (width < 600px) {
+  .preview-right-skeleton {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}

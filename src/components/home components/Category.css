@@ -1,0 +1,30 @@
+.category {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 0 4px;
+  border-radius: 6px;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+.category h5 {
+  text-align: center;
+}
+
+.category-icon {
+  background-color: rgba(51, 133, 115, 0.32);
+  display: grid;
+  place-items: center;
+  width: 40%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.category-icon svg {
+  fill: #338573;
+}

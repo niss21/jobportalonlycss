@@ -1,0 +1,22 @@
+.heading {
+  background-color: #f4f5f7;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.chartcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 98%;
+  margin: 5px;
+}
+
+.charts {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}

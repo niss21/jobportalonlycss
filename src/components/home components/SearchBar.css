@@ -1,0 +1,81 @@
+.searchbar-wrapper {
+  background-image: url("../../assets/jobportalbg.png");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  /* aspect-ratio: 2 / 1; */
+  padding: 50px 0 200px 40px;
+}
+
+.search-left-content {
+  /* border: 1px solid black; */
+  width: 50%;
+  max-width: 500px;
+}
+
+.searchbar-title {
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.searchbar-title span {
+  color: #338573;
+}
+
+.search-left-content p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.searchbar {
+  display: flex;
+}
+
+.searchbar input {
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: none;
+  outline: 0px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+
+.searchbar input:focus {
+  box-shadow: -1px 1px 2px #338573;
+}
+
+.searchbar button {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #338573;
+  text-decoration: none;
+  font-weight: 800;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (width > 920px) {
+  .searchbar-title {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .search-left-content p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width < 690px) {
+  .search-left-content {
+    width: 70%;
+  }
+}
+
+@media screen and (width < 500px) {
+  .search-left-content {
+    width: 80%;
+  }
+}

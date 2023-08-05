@@ -1,0 +1,191 @@
+.form-title {
+  background-color: #f4f5f7;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 6px;
+  max-width: 400px;
+  width: 95%;
+  padding: 20px 10px 10px;
+  margin: 30px auto;
+  box-shadow: 2px 2px 1px #e3e3e3, -1px -1px 1px #e3e3e3;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 96%;
+  gap: 20px;
+  border-radius: 6px;
+  margin: 20px auto;
+  padding: 30px 30px 20px;
+  box-shadow: 2px 2px 1px #e3e3e3, -1px -1px 1px #e3e3e3;
+}
+
+.input-section {
+  display: flex;
+  gap: 20px;
+}
+
+.input-category-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.input-category-wrapper p {
+  color: #fe3333;
+}
+
+.input-category-container {
+  display: flex;
+  gap: 20px;
+}
+
+.category-field {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.category-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-field label {
+  font-weight: 500;
+  font-weight: 500;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  border: 1px solid #e3e3e3;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.form-field textarea {
+  resize: none;
+  height: 300px;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border: 1px solid #338573;
+}
+
+.form-btn {
+  background-color: #338573;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.post-btn {
+  align-self: flex-end;
+}
+
+.form-link {
+  align-self: center;
+}
+
+.form-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.form-link a:hover {
+  color: #338573;
+}
+
+input[type="checkbox"] {
+  accent-color: #338573;
+}
+
+.image-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border: 1px dashed #338573;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-input,
+.image-input:focus {
+  border: none;
+}
+
+.image-input-wrapper img {
+  width: 100px;
+}
+
+.image-remove-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.image-remove-btn-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.image-remove-btn-wrapper div button {
+  background-color: #fe3333;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.password-criteria-list {
+  list-style: inside;
+}
+
+.password-criteria-list li {
+  margin-bottom: 2px;
+}
+
+.form-error {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: red;
+  font-size: 12px;
+}
+
+@media screen and (width < 900px) {
+  .input-section {
+    flex-direction: column;
+  }
+}
