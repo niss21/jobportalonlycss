@@ -45,9 +45,9 @@ function Header() {
         <Link to="/">JobsPortal</Link>
       </h2>
       <div className="header-buttons">
-        <Link to="/charts" className="light-link">
+        {/* <Link to="/charts" className="light-link">
           Charts
-        </Link>
+        </Link> */}
         {role === "noRole" && (
           <>
             <Link to="/login" className="light-link">

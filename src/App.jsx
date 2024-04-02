@@ -11,10 +11,10 @@ import PostedJobs from "./pages/jobs/PostedJobs.jsx";
 import AppliedJobs from "./pages/jobs/AppliedJobs.jsx";
 import ProtectedRoutes from "./components/ProtectedRoutes.jsx";
 import SearchedJobs from "./pages/jobs/SearchedJobs.jsx";
-import Charts from "./components/Charts.jsx";
+// import Charts from "./components/Charts.jsx";
 
 import "./App.css";
-import ForbiddenPage from "./pages/ForbiddenPage.jsx";
+// import ForbiddenPage from "./pages/ForbiddenPage.jsx";
 
 function App() {
   const role = localStorage.getItem("role") || "noRole";
@@ -31,7 +31,7 @@ function App() {
         </Route>
 
         <Route path="/search/:search_term" element={<SearchedJobs />} />
-        <Route path="/charts" element={<Charts />} />
+        {/* <Route path="/charts" element={<Charts />} /> */}
         <Route path="job/:id" element={<ShowJob />} />
 
         <Route element={<ProtectedRoutes check="profile" />}>
